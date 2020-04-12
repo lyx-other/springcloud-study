@@ -1,0 +1,11 @@
+server:
+    port: 7001
+
+eureka:
+    eureka:
+        hostname: 127.0.0.1 # eureka服务端所在的主机
+    client:
+        register-with-eureka: false # 不注册自己
+        fetch-registry: false # 这条配置表示，自己就是注册中心，不需要去检索服务
+        service-url:
+            defaultZone: http://${eureka.eureka.hostname}:${server.port}/eureka/ # 配置与eureka交互的地址
