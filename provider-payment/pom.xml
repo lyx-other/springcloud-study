@@ -63,10 +63,17 @@
 			<optional>true</optional>
 		</dependency>
 
+		<!-- 系统common模块 -->
 		<dependency>
 			<artifactId>common</artifactId>
 			<groupId>lyx.com</groupId>
 			<version>1.0</version>
+		</dependency>
+
+		<!-- eureka-client -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 		</dependency>
 
 	</dependencies>
