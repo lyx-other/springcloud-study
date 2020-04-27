@@ -15,10 +15,10 @@
 
 	<!-- 子模块 -->
 	<modules>
-		<module>provider-payment</module>
-		<module>consumer-order</module>
 		<module>common</module>
 		<module>eureka</module>
+		<module>m1</module>
+		<module>m2</module>
 	</modules>
 
 	<!-- 统一管理jar包版本 -->
@@ -34,7 +34,6 @@
 		<druid.version>1.1.16</druid.version>
 		<mybatis.plus.spring.boot.version>3.3.1</mybatis.plus.spring.boot.version>
 		<junit.version>4.12</junit.version>
-		<lombok.version>1.16.18</lombok.version>
 	</properties>
 
 	<!-- 声明依赖，并不引入，子模块继承之后，子module不用version -->
@@ -68,40 +67,11 @@
 				<scope>import</scope>
 			</dependency>
 
-			<!-- java连接mysql -->
-			<dependency>
-				<groupId>mysql</groupId>
-				<artifactId>mysql-connector-java</artifactId>
-				<version>${mysql.connector.version}</version>
-			</dependency>
-
-			<!-- druid -->
-			<dependency>
-				<groupId>com.alibaba</groupId>
-				<artifactId>druid</artifactId>
-				<version>${druid.version}</version>
-			</dependency>
-
-			<!-- springboot整合mp -->
-			<dependency>
-				<groupId>com.baomidou</groupId>
-				<artifactId>mybatis-plus-boot-starter</artifactId>
-				<version>${mybatis.plus.spring.boot.version}</version>
-			</dependency>
-
 			<!-- junit -->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${junit.version}</version>
-			</dependency>
-
-			<!-- lombok -->
-			<dependency>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok</artifactId>
-				<version>${lombok.version}</version>
-				<optional>true</optional>
 			</dependency>
 
 		</dependencies>

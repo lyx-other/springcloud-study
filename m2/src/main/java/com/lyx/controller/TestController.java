@@ -1,29 +1,24 @@
 package com.lyx.controller;
 
-import com.lyx.ResponseData;
-import com.lyx.entity.Payment;
+import com.lyx.ResponseBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.List;
-
 @RestController
-public class OrderController
+public class TestController
 {
 	@Autowired
 	@Qualifier("restTemplate")
 	private RestTemplate restTemplate;
 
 	@GetMapping("/foo")
-	public ResponseData foo()
+	public String foo()
 	{
-		ResponseData<List<Payment>> object = restTemplate.getForObject("http://127.0.0.1:8081/list", ResponseData.class);
+		ResponseBean responseBean = restTemplate.getForObject("http://127.0.0.1:8081/foo", ResponseBean.class);
 
-		System.out.println(object.getData().getClass().getName());
-
-		return ResponseData.successData(object);
+		return "这是m2模块，得到m1的数据：\n" + responseBean;
 	}
 }

@@ -15,7 +15,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<!-- 坐标 继承后不用写其他两个 -->
-	<artifactId>provider-payment</artifactId>
+	<artifactId>m1</artifactId>
 
 	<dependencies>
 
@@ -36,24 +36,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
-
-		<!-- java连接mysql -->
-		<dependency>
-			<groupId>mysql</groupId>
-			<artifactId>mysql-connector-java</artifactId>
-		</dependency>
-
-		<!-- druid -->
-		<dependency>
-			<groupId>com.alibaba</groupId>
-			<artifactId>druid</artifactId>
-		</dependency>
-
-		<!-- springboot整合mp -->
-		<dependency>
-			<groupId>com.baomidou</groupId>
-			<artifactId>mybatis-plus-boot-starter</artifactId>
 		</dependency>
 
 		<!-- lombok -->
