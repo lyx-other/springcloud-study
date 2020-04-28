@@ -1,4 +1,4 @@
-package com.lyx;
+package com.common;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;

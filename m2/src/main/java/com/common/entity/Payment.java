@@ -1,4 +1,4 @@
-package com.lyx.entity;
+package com.common.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

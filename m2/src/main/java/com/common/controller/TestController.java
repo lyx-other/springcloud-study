@@ -1,6 +1,6 @@
-package com.lyx.controller;
+package com.common.controller;
 
-import com.lyx.ResponseBean;
+import com.common.ResponseBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
