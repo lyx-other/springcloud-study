@@ -1,13 +1,11 @@
 package com.common;
 
-import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Data;
 
 /**
  * 返回数据封装
  */
 @Data
-@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResponseBean<T>
 {
 	private Boolean success;

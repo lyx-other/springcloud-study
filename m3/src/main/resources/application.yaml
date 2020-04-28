@@ -1,2 +1,12 @@
 server:
     port: 8082
+
+spring:
+    application:
+        name: m3-8082
+    cloud:
+        consul:
+            host: 172.20.10.8
+            port: 8500
+            discovery:
+                service-name: ${spring.application.name}
