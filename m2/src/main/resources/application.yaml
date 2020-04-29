@@ -3,7 +3,7 @@ server:
 
 spring:
     application:
-        name: m2-80
+        name: m2
 
 eureka:
     client:
