@@ -1,17 +1,15 @@
-package com.payment;
+package com.lyx;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
 @SpringBootApplication
-@EnableDiscoveryClient
-public class M1App
+public class M2App
 {
 	public static void main(String[] args)
 	{
-		SpringApplication.run(M1App.class, args);
+		SpringApplication.run(M2App.class, args);
 	}
 }

@@ -1,4 +1,4 @@
-package com.common.config;
+package com.lyx.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

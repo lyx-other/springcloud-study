@@ -1,4 +1,4 @@
-package com.common;
+package com.lyx;
 
 import lombok.Data;
 
