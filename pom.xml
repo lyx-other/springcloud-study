@@ -20,9 +20,10 @@
 		<module>m1</module>
 		<module>m2</module>
 		<module>m2-copy</module>
-		<module>m-three</module>
+		<module>m3</module>
+		<module>m3-copy</module>
 		<module>
-			m-three-copy
+			m4
 		</module>
 	</modules>
 
@@ -63,20 +64,17 @@
 				<scope>import</scope>
 			</dependency>
 
-			<!-- spring cloud alibaba 2.1.0.RELEASE -->
-			<dependency>
-				<groupId>com.alibaba.cloud</groupId>
-				<artifactId>spring-cloud-alibaba-dependencies</artifactId>
-				<version>${spring.cloud.alibaba.version}</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-
 			<!-- junit -->
 			<dependency>
 				<groupId>junit</groupId>
 				<artifactId>junit</artifactId>
 				<version>${junit.version}</version>
+			</dependency>
+
+			<dependency>
+				<artifactId>common</artifactId>
+				<groupId>lyx.com</groupId>
+				<version>${project.version}</version>
 			</dependency>
 
 		</dependencies>

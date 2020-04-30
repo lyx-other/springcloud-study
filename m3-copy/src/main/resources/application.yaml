@@ -1,0 +1,13 @@
+server:
+    port: 60031
+
+spring:
+    application:
+        name: m3
+
+eureka:
+    client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+            defaultZone: http://127.0.0.1:7001/eureka/
