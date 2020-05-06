@@ -22,9 +22,7 @@
 		<module>m2-copy</module>
 		<module>m3</module>
 		<module>m3-copy</module>
-		<module>
-			m4
-		</module>
+		<module>m4</module>
 	</modules>
 
 	<!-- 统一管理jar包版本 -->
@@ -35,10 +33,6 @@
 
 		<spring.boot.version>2.2.2.RELEASE</spring.boot.version>
 		<spring.cloud.version>Hoxton.SR1</spring.cloud.version>
-		<spring.cloud.alibaba.version>2.1.0.RELEASE</spring.cloud.alibaba.version>
-		<mysql.connector.version>8.0.19</mysql.connector.version>
-		<druid.version>1.1.16</druid.version>
-		<mybatis.plus.spring.boot.version>3.3.1</mybatis.plus.spring.boot.version>
 		<junit.version>4.12</junit.version>
 	</properties>
 
@@ -71,6 +65,7 @@
 				<version>${junit.version}</version>
 			</dependency>
 
+			<!-- common模块 -->
 			<dependency>
 				<artifactId>common</artifactId>
 				<groupId>lyx.com</groupId>
