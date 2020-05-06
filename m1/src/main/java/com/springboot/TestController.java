@@ -1,31 +1,27 @@
 package com.springboot;
 
+import com.springboot.openfeign.M3Feign;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.springframework.web.client.RestTemplate;
 
 @RestController
 public class TestController
 {
 	@Autowired
-	@Qualifier("restTemplate")
-	private RestTemplate restTemplate;
+	private M3Feign m3Feign;
 
-	@GetMapping("/m1m2")
-	public ResponseBean m1M2()
+	@GetMapping("/m1foo")
+	public ResponseBean foo()
 	{
-		System.out.println("执行了m1模块的 m1M2 方法");
-
-		return restTemplate.getForObject("http://m2/foo", ResponseBean.class);
+		return m3Feign.foo();
 	}
 
-	@GetMapping("/m1m3")
-	public ResponseBean m1M3()
+	@GetMapping("/m1bar")
+	public ResponseBean bar()
 	{
-		System.out.println("执行了m1模块的 m1M3 方法");
+		System.out.println("方法调用");
 
-		return restTemplate.getForObject("http://M-THREE/foo", ResponseBean.class);
+		return m3Feign.bar("test");
 	}
 }

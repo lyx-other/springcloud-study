@@ -65,6 +65,12 @@
 			<version>1.2.68</version>
 		</dependency>
 
+		<!-- openfeign -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-openfeign</artifactId>
+		</dependency>
+
 	</dependencies>
 
 </project>
