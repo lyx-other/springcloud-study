@@ -1,6 +1,7 @@
-package com.springboot;
+package com.m1;
 
-import com.springboot.openfeign.M3Feign;
+import com.common.ResponseBean;
+import com.m1.openfeign.M3Feign;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;

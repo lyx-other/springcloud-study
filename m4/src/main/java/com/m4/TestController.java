@@ -1,6 +1,6 @@
-package com.lyx;
+package com.m4;
 
-import com.springboot.ResponseBean;
+import com.common.ResponseBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;

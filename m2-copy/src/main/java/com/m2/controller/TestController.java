@@ -1,6 +1,6 @@
-package com.springboot.controller;
+package com.m2.controller;
 
-import com.springboot.ResponseBean;
+import com.common.ResponseBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
