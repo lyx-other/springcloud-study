@@ -1,16 +1,13 @@
 server:
-    port: 6001
+    port: 6006
 
 spring:
     application:
-        name: m1
+        name: m6
 
 eureka:
     client:
         register-with-eureka: true
         fetch-registry: true
         service-url:
-            defaultZone: http://127.0.0.1:7001/eureka
-ribbon:
-    ReadTimeout: 6000
-    ConnectTimeout: 6000
+            defaultZone: http://127.0.0.1:7001/eureka/
