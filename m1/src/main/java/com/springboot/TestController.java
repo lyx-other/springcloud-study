@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController
 {
+	/**
+	 * 注入要调用模块的 feign接口实例
+	 */
 	@Autowired
 	@Qualifier("m3feign")
 	private M3Feign m3Feign;
@@ -16,14 +19,12 @@ public class TestController
 	@GetMapping("/m1foo")
 	public ResponseBean foo()
 	{
-		return m3Feign.foo();
+		return m3Feign.foo(); // 调用就可以了
 	}
 
 	@GetMapping("/m1bar")
 	public ResponseBean bar()
 	{
-		System.out.println("方法调用");
-
-		return m3Feign.bar("test");
+		return m3Feign.bar("test"); // 调用就可以了
 	}
 }
