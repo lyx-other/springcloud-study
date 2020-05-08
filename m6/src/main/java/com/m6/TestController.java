@@ -1,8 +1,6 @@
 package com.m6;
 
 import com.common.ResponseBean;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import com.netflix.hystrix.contrib.javanica.annotation.HystrixProperty;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,20 +8,28 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController
 {
 	@GetMapping("/foo")
-	@HystrixCommand
-	(
-		fallbackMethod = "error",
-		commandProperties = { @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000") }
-	)
 	public ResponseBean foo()
 	{
-		int a = 3 / 0;
-
 		return ResponseBean.successMsg("这是m6模块的foo方法");
 	}
 
-	public ResponseBean error()
+	@GetMapping("/fun1")
+	public ResponseBean fun1()
 	{
-		return ResponseBean.errorMsg("接口有错误");
+		return ResponseBean.successMsg("这是m6模块的fun1方法");
+	}
+
+	@GetMapping("/fun2")
+	public ResponseBean fun2()
+	{
+		return ResponseBean.successMsg("这是m6模块的fun2方法");
+	}
+
+	@GetMapping("/fun3")
+	public ResponseBean fun3()
+	{
+		int a = 10 / 0;
+
+		return ResponseBean.successMsg("这是m6模块的fun3方法");
 	}
 }

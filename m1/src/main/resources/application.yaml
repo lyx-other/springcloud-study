@@ -14,3 +14,7 @@ eureka:
 ribbon:
     ReadTimeout: 6000
     ConnectTimeout: 6000
+
+feign:
+    hystrix:
+        enabled: true

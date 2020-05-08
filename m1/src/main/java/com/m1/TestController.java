@@ -29,4 +29,10 @@ public class TestController
 	{
 		return m6Feign.foo();
 	}
+
+	@GetMapping("m1fun3")
+	public ResponseBean fun3()
+	{
+		return m6Feign.fun3();
+	}
 }
