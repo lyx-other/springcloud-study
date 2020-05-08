@@ -6,7 +6,7 @@ import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @EnableEurekaClient
-@EnableCircuitBreaker // 添加这个注解
+@EnableCircuitBreaker
 @SpringBootApplication
 public class M6App
 {
