@@ -1,15 +1,13 @@
-package com.m7;
+package com.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.hystrix.dashboard.EnableHystrixDashboard;
 
 @SpringBootApplication
-@EnableHystrixDashboard
-public class M7App
+public class GateWayApp
 {
 	public static void main(String[] args)
 	{
-		SpringApplication.run(M7App.class, args);
+		SpringApplication.run(GateWayApp.class, args);
 	}
 }
